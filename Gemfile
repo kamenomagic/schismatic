@@ -1,3 +1,2 @@
 source 'https://rubygems.org'
-gem 'jekyll'
-gem 'jekyll-theme-midnight'
+gem "github-pages", group: :jekyll_plugins
