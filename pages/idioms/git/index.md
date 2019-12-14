@@ -3,12 +3,20 @@ layout: page
 title: Git
 ---
 
-Interactive rebase for the past 3 commits:
-`git rebase -i HEAD~3`
+## Rebase
+
+Most often, just use this:
+* `git pull --rebase origin master`
+
+Interactive rebase for the past 3 commits (to squash, delete, pick, etc.):
+* `git rebase -i HEAD~3`
 
 ---
 
 ## Tagging
+
+**Git tags are just branches that can no longer change; they behave almost the same as a branch.**
+There are annotated tags and lightweight ones, annotated tags can store author name, release notes, a message, and date.
 
 List existing tags:
 * `git tag` 
@@ -26,7 +34,7 @@ Add a tag to existing commit:
 Add a tag based on the current commit:
 * `git tag -a 1.4`
 
-`git push` does *not* transfer tags to remote servers. To do so, execute the following *after* creating the tag:
+`git push` does **not** transfer tags to remote servers. To do so, execute the following **after** creating the tag:
 * `git push <remote> <tagname>` example: `git push origin v1.4`
 * `git push origin --tags`: pushes all tags up
 
@@ -35,7 +43,5 @@ Delete tags:
 
 You can checkout the patchset that corresponds with a tag:
 * `git checkout v1.4`
-
-
 
 ---
