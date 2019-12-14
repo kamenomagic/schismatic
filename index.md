@@ -4,11 +4,18 @@ title: Home
 ---
 # Schismatic
 
-{% for page in site.pages %}
-  {% if page.layout == 'page'%}
-	{% assign splitPath = page.path | split: '/' %}
-	{% assign name = splitPath[1] | capitalize %}
-	{% assign path = splitPath[0] | append: '/' | append: splitPath[1] %}
+{% assign pages = site.pages | where: 'layout', 'page' | sort: 'path' %}
+{% assign last = '' %}
+{% for p in pages %}
+	{% assign splitPath = p.path | split: '/' %}
+	{% assign name = splitPath | slice: -2, 1 | first | capitalize %}
+	{% assign path = p.path | remove_first: p.name %}
+	{% assign current = splitPath | slice: 1 %}
+	{% if current != last %}
+---
+## {{current}}
+	{% endif %}
 [{{name}}]({{path}})
-  {% endif %}
+	{% assign last = splitPath | slice: 1 | 0, -1 %}
 {% endfor %}
+
