@@ -4,6 +4,14 @@ title: Home
 ---
 # Schismatic
 
+---
+## Roadmap
+
+* Add redux idioms and basics
+* Move pinouts pictures over from onenote
+* go through onenote to check it out
+* it's ok to add just links to things for tutorials, no need to copy things over and reexplain
+
 {% assign pages = site.pages | where: 'layout', 'page' | sort: 'path' %}
 {% assign last = '' %}
 {% for p in pages %}
@@ -13,9 +21,8 @@ title: Home
 	{% assign current = splitPath | slice: 1 %}
 	{% if current != last %}
 ---
-## {{current}}
+### {{current}}
 	{% endif %}
-[{{name}}]({{path}})
+* [{{name}}]({{path}})
 	{% assign last = splitPath | slice: 1 | 0, -1 %}
 {% endfor %}
-
