@@ -10,6 +10,7 @@ title: Home
 * Add redux idioms and basics
 * Move pinouts pictures over from onenote
 * go through onenote to check it out
+* Go through bookmarks, check if any are long-lived references
 * it's ok to add just links to things for tutorials, no need to copy things over and reexplain
 
 {% assign pages = site.pages | where: 'layout', 'page' | sort: 'path' %}
