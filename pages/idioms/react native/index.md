@@ -26,3 +26,5 @@ add
 RCTReadString(input, “__attribute__((__unused__))”) ||
 ```
 
+## react-native-dotenv not reloading:
+Always try to use `react-native start --reset-cache`
