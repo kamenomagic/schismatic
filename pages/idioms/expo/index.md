@@ -27,3 +27,10 @@ project’s node\_modules directories too for good measure even though it’s pr
 8. Delete the packager’s cache directory with rm -fr $TMPDIR/metro\*
 9. Start XDE or exp (With exp, run exp r -c for good measure
 10. And just to be sure, force quit the Expo client on your phone or simulator and re-open it.
+
+## Running expo with react native debugger (standalone)
+[Taken from here](https://streetsmartdev.com/debugging-react-native-expo-using-react-native-debugger/)
+1. Run `yarn add --dev react-native-debugger-open` (or install globally, I think should work)
+2. Add to scripts if desired: `"scripts": {"postinstall": "rndebugger-open --expo"}`
+3. Run `rndebugger-open --expo`
+4. It will set the correct ui: `Replace `open debugger-ui with Chrome` to `open React Native Debugger`
