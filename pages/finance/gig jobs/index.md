@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Gig jobs
 ---
 
@@ -23,4 +23,4 @@ title: Gig jobs
 ## Upwork
 
 ## Health Related
-[MyAchievement](https://www.myachievement.com/)
+* [MyAchievement](https://www.myachievement.com/)
