@@ -10,6 +10,7 @@ title: Gig jobs
 * [TranscribeMe](https://workhub.transcribeme.com/)
 
 ## Captioning
+* [Rev](rev.com)
 
 ## Surveys
 * SwagBucks
