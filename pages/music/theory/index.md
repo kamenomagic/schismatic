@@ -8,14 +8,17 @@ Modes
 Keys/Scales
 Intervals
 Ear training
+Cadences
 Chords
   * Progressions
     * [https://en.wikipedia.org/wiki/List_of_chord_progressions](https://en.wikipedia.org/wiki/List_of_chord_progressions)
-    * [https://en.wikibooks.org/wiki/Music_Theory/Complete_List_of_Chord_Patterns](https://en.wikibooks.org/wiki/Music_Theory/Complete_List_of_Chord_Patterns)
+  * [https://en.wikibooks.org/wiki/Music_Theory/Complete_List_of_Chord_Patterns](https://en.wikibooks.org/wiki/Music_Theory/Complete_List_of_Chord_Patterns)
   * Slash chords
 Structure
 Rhythm 
 
+Tools
+  * [https://www.hooktheory.com/trends](https://www.hooktheory.com/trends)
 ---
 
 
