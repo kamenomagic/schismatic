@@ -21,7 +21,8 @@ Tools
   * [https://www.hooktheory.com/trends](https://www.hooktheory.com/trends)
 ---
 
-
+## Piano scale fingerings
+[https://www.pianoscales.org/major.html](https://www.pianoscales.org/major.html)
 
 
 ## Picking keys
