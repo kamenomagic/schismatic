@@ -8,3 +8,7 @@ title: Rails
 
 ## Create a new project, with familiar options
 * `rails new project-name-here --api --database=postgresql`
+
+## Create user postgres
+* `Create user USER with password 'password';`
+* `ALTER USER username CREATEDB;`

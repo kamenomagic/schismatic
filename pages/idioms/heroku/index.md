@@ -28,3 +28,9 @@ More info: https://devcenter.heroku.com/articles/rake
 If you have more than 1 remote, append `--remote [your_remote_name]` like this:
 
 `heroku run rake db:migrate --remote dev` (`dev` is example remote here)
+
+### Clone database from heroku instance
+
+`heroku pg:backups:capture -a staging-example`
+`heroku pg:backups:download -a staging-example`
+`pg_restore --verbose --clean --no-acl --no-owner -h localhost -U postgres -d database_name latest.dump`
